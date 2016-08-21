@@ -16,7 +16,7 @@ server.login(sender_email, sender_password)
 # build and send email
 send_time = time.strftime('%X %x %Z')
 header = "\n This email was automatically generated and sent at " + send_time +"\n"
-body = "\n Here's it today's rundown:  "
+body = "\n Here's it today's rundown:"
 msg = header + body
 server.sendmail(sender_email, receipient_email, msg)
 server.quit()
