@@ -1,11 +1,10 @@
 import time
 import sys
-
-print "Imports completed successfully. Initializing... "
+print "\n\n\nImports completed successfully.\n\n\nInitializing...\n"
 
 start = 0
 
 while True:
-    print(start)
+    print("Initializing for " + str(start) + " seconds.")
     start = start + 1
     time.sleep(1)
