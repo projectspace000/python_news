@@ -27,10 +27,10 @@ def url(data):
             print i,url
 
 
-def most_viewed(days, api):
+def most_mailed(days, api):
     import urllib
     import json
-    bucket = 'http://api.nytimes.com/svc/mostpopular/v2/mostviewed/all-sections/'
+    bucket = 'http://api.nytimes.com/svc/mostpopular/v2/mostemailed/all-sections/'
     string = bucket+days+api
     
     response_string = urllib.urlopen(string).read()
@@ -46,8 +46,8 @@ def most_viewed(days, api):
     
 
 #past seven days
-days='3?'
+days='7?'
 api='api-key=6166b3347690479eb293da918c613e03'
 
 #call the function
-most_viewed(days, api)
+most_mailed(days, api)
