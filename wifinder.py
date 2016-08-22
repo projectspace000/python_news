@@ -115,8 +115,9 @@ if __name__ == '__main__':
     beep()
     # build and send email
     send_time = time.strftime('%X %x %Z')
-    header = "\n This email was automatically generated and sent at " + send_time +"\n"
-    body = "A new device has joined the network."
+    new_device = str(newList)
+    header = "\n This email was automatically generated and sent at " + send_time + "\n"
+    body = "A new device has joined the network.\n" + new_device + "\n"
     msg = header + body
     server.sendmail(sender_email, receipient_email, msg)
     server.quit()
