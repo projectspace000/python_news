@@ -111,8 +111,8 @@ if __name__ == '__main__':
         new_count = seek()
 
     # DANGER!!!
-    print('OHSHITOHSHITOHSHITOHSHITOHSHIT!')
-    beep()
+    print("NEW CONNECTION DETECTED!")
+    
     # build and send email
     send_time = time.strftime('%X %x %Z')
     header = "\n This email was automatically generated and sent at " + send_time + "\n"
